@@ -8,11 +8,21 @@
 
 #include <iostream>
 
+using namespace std;
+
+int factorial(int num)
+{
+    if(num <= 1)
+        return 1;
+    else
+        return num*factorial(num-1);
+}
+
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int x = factorial(5);
+    cout << x << endl;
+    
     return 0;
 }
 
